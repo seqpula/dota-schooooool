@@ -1,0 +1,61 @@
+@font-face {
+        font-family: 'dokaf';
+        src: url('./fontdoka.otf') format('opentype');
+
+}
+a.head {
+    color: red;
+    background-color: rgba(207, 207, 207, 0.664);
+    border: px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15%;
+    font-family: 'dokaf', sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 25px;
+}
+header.container {
+    display: flex;
+    align-items: center;
+}
+h1,p.main {
+    color: red;
+    font-family: 'dokaf', sans-serif;
+    text-align: center;
+    font-size: x-large;
+}
+img.gallery {
+    width: 620;
+    height: 310;
+}
+img.photogallery {
+  margin: auto;
+    width: 620;
+    height: 310;
+}
+img.background {
+  min-height: 100%;
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* Зависит от размера изображения */
+  @media screen and (max-width: 640px){
+	img.bg {
+	  left: 50%;
+	  margin-left: -320px;
+	}
+  }
+}
+div.contacts {
+  margin-left: 38%;
+  display: flex;
+}
+ol.list {
+  padding-top: 10px;
+}
