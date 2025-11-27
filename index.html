@@ -1,0 +1,377 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <style>
+          table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  th,td {
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .round {
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    border: 2px white;
+    -webkit-box-shadow: 0px 5px 38px 15px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 38px 15px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 38px 15px rgba(34, 60, 80, 0.2);
+  }
+  .profile {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+  }
+    </style>
+<!-- 
+    тут буду оставлять пояснения по коду, где информацию беру.
+    https://www.w3.org/2005/10/howto-favicon 
+    https://stackoverflow.com/questions/32454286/change-the-color-of-an-empty-or-0-cell-in-html-table
+    https://htmlbook.ru/faq/kak-sdelat-kruglye-izobrazheniya
+    https://active-vision.ru/icon/box-shadow
+    https://developer.mozilla.org/en-US/docs/Web/CSS/display
+-->
+    <body style="margin: 0;">
+            <link rel="icon"  
+                type="image/png" 
+                href="icon/logo.png"
+                >
+            <title>
+                Онлайн-школа DOKA 2
+            </title>
+
+        <header style="margin-top: 35px;">
+            
+            <a href="#Расписание" class="head" style="margin-left: 35%;">
+                Расписание
+            </a>
+            <a href="#Ученики" class="head">
+                Список учеников
+            </a>
+            <a href="#Преподаватели" class="head">
+                Преподаватели
+            </a>
+            <a href="#Галерея" class="head">
+                Фотогалерея
+            </a>
+            <a href="#Контакты" class="head">
+                Контакты
+            </a>
+
+        </header>
+            <main style="margin-top: 35px;">
+                <img src="https://fonzon.club/uploads/posts/2022-01/1643559232_2-fonzon-club-p-dota-2-logo-png-prozrachnii-fon-8.png" class="background" />
+                    <h1 class="main">Онлайн-школа по игре Dota 2 "DOKA 2"</h1>
+                        <img class="gallery" 
+                        src="https://images.cybersport.ru/images/material-card/plain/0b/0bec82cc-6d48-4994-ae03-8c407413c984.jpg" style="margin-left: 20px;">
+                        <img class="gallery" 
+                        src="https://images.cybersport.ru/images/material-card/plain/cb/cb670f87-49c6-42e5-98f2-5b8c32f02365.jpg">
+                        <img class="gallery" 
+                        src="https://images.cybersport.ru/images/material-card/plain/90/9097a1b8-ac1d-41fa-8d22-b97f0892d6cf.jpg">
+                        <img class="gallery" 
+                        src="https://images.cybersport.ru/images/material-card/plain/91/91952e89-6d1d-462a-9390-9a098a76b999.jpg" style="margin-left: 20px;">
+                        <img class="gallery" 
+                        src="https://images.cybersport.ru/images/material-card/plain/ad/adaa2d44-a5a7-4675-9f72-308e729917ec.jpg">
+                        <img class="gallery" 
+                        src="https://images.cybersport.ru/images/material-card/plain/76/767447e1-41e3-4566-b17f-8eaeb8e87ad5.jpg">
+
+                    <br>
+                    <h1 id="Расписание" class="main">
+                        Расписание
+                    </h1>
+                        <div>
+                        <table 
+                        style="width: 800px; height: 150px; margin-left: auto; margin-right: auto;">
+                        <tr>
+                            <td 
+                            style="background-color: rgb(202, 202, 202);">
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Понедельник
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Вторник
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Среда
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Четверг
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Пятница
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Суббота
+                            </td>
+                            <td 
+                            style="background-color: rgb(148, 148, 148);">
+                            Воскресенье
+                            </td>
+                        </tr>
+                            <td style="background-color: rgb(148, 148, 148);">
+                                1 четверть
+                            </td>
+                                <td>
+                                    Теория
+                                </td>
+                                    <td>
+                                        Теория
+                                    </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+                            </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+                            </td>
+                                    <td>
+                                        Теория
+                                    </td>
+                            <td>
+                                <a href="https://школакиберспорта.рф/">Онлайн практика</a>
+                            </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+
+                            </td>
+                        <tr>
+                            <td style="background-color: rgb(148, 148, 148);">
+                                2 четверть
+                            </td>
+                                <td>
+                                    Практика
+                                </td>
+                                    <td>
+                                        Теория
+                                    </td>
+                                        <td>
+                                            Теория
+                                        </td>
+                                        <td>
+                                            Практика
+                                        </td>
+                                    <td>
+                                        Практика
+                                    </td>
+                                <td>
+                                    <a href="https://школакиберспорта.рф/">Онлайн практика</a>
+                                </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(148, 148, 148);">
+                                3 четверть
+                            </td>
+                                <td>
+                                    Теория
+                                </td>
+                                    <td>
+                                        Практика
+                                    </td>
+                                        <td>
+                                            Теория
+                                        </td>
+                                        <td>
+                                            Практика
+                                        </td>
+                                    <td>
+                                        Практика
+                                    </td>
+                                <td>
+                                    <a href="https://школакиберспорта.рф/">Онлайн практика</a>
+                                </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(148, 148, 148);">
+                                4 четверть
+                            </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+
+                            </td>
+                                    <td style="background-color: rgb(250, 80, 80);">
+
+                                    </td>
+                                        <td>
+                                            <a href="https://школакиберспорта.рф/">Онлайн практика</a>
+                                        </td>
+                            <td>
+                                Теория
+                            </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+
+                            </td>
+                                <td style="background-color: rgb(250, 80, 80);">
+                                    
+                                </td>
+                            <td style="background-color: rgb(250, 80, 80);">
+                            </td>
+                        </tr>
+                    </table>
+                        </div>
+                    <br>
+                    <h1 id="Ученики" class="main">
+                        Список учеников
+                    </h1>
+                    <br>
+<!--
+                    короче, тут я сразу начала делать листы через таблицу, а когда дошла до иконок - поняла что добавить их не могу через list-style-image, и решила сделать просто иконки. 
+                    не нашла решения тому, как сделать листы в таблицу - поленилась если точнее.
+-->
+                        <table style="width: 1250px; margin-left: auto; margin-right: auto;">
+                            <tr>
+                                <td style="text-align: center;"><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/9/95/Venomancer_minimap_icon.png/revision/latest?cb=20131124183639" 
+                                    style="height: 20px; vertical-align: center;">
+                                    Младшая группа (6-10 лет)
+                                </td>
+                                <td style="text-align: center;"><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/3/30/Anti-Mage_minimap_icon.png/revision/latest?cb=20120717000916" 
+                                    style="height: 20px; vertical-align: center;">
+                                    Средняя группа (10-14 лет)
+                                </td>
+                                <td style="text-align: center;"><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7d/Invoker_minimap_icon.png/revision/latest?cb=20120717000939" 
+                                    style="height: 20px; vertical-align: center;">
+                                    Старшая группа (14-20 лет)
+                                </td>
+                                <td style="text-align: center;"><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/1/17/Meepo_minimap_icon.png/revision/latest?cb=20120725222447" 
+                                    style="height: 20px; vertical-align: center;">
+                                    Старейшая группа (20+)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <ol class="list">
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                    </ol>
+                                </td style="text-align: center;">
+                                <td>
+                                    <ol class="list">
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                    </ol>
+                                </td>
+                                <td style="text-align: center; vertical-align: center;">
+                                    <il style="list-style-type: circle;">
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                    </il>
+                                </td>
+                                <td style=" text-align: center;">
+                                    <il style="list-style-type: circle;">
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                        <li>Фамилия Имя Отчество</li>
+                                    </il>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                    <h1 id="Преподаватели" class="main">
+                        Команда преподавателей
+                    </h1>
+                    <div class="profile" style="margin-left: 350px;">
+                        <img src="https://distribution.faceit-cdn.net/images/2cc6663f-2085-49c5-aa4d-f5769f7708ba.jpeg" class="round">
+                        <p class="main"> Владислава Левенец - "Stariy bog"<br>Профессиональный игрок Dota 2<br>503 ранг</p>
+                    </div>
+                    <div class="profile">
+                        <img src="https://www.meme-arsenal.com/memes/99575d467d5a1324e4e009581a3a2308.jpg" class="round">
+                        <p class="main"> Ростислав Протасеня - "Rostik999"<br>Киберспортсмен по Dota 2<br>399 ранг</p>
+                    </div>
+                    <div class="profile">
+                        <img src="https://dota.cyberwars.pro/media/uploads/040222_4.jpeg" class="round">
+                        <p class="main"> Александр Хертек - "TORONTOTOKYO"<br>Нынешний игрок Aurora Gaming<br>34 ранг</p>
+                    </div>
+                    <div class="profile">
+                        <img src="https://distribution.faceit-cdn.net/images/28db7d19-2f89-4bf5-9ab1-a01cf72389fe.jpeg" class="round">
+                        <p class="main"> Антон Шкредов - "Dyrachyo"<br>Бывший игрок Gaimin Gladiators<br>81 ранг</p>
+                    </div>
+                    <br>
+
+                    <h1 id="Галерея" class="main">
+                        Фотогалерея
+                    </h1>
+                        
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/0b/0bec82cc-6d48-4994-ae03-8c407413c984.jpg" style="margin-left: 20px;">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/cb/cb670f87-49c6-42e5-98f2-5b8c32f02365.jpg">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/90/9097a1b8-ac1d-41fa-8d22-b97f0892d6cf.jpg">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/91/91952e89-6d1d-462a-9390-9a098a76b999.jpg" style="margin-left: 20px;">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/ad/adaa2d44-a5a7-4675-9f72-308e729917ec.jpg">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/76/767447e1-41e3-4566-b17f-8eaeb8e87ad5.jpg">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/76/767447e1-41e3-4566-b17f-8eaeb8e87ad5.jpg" style="margin-left: 20px;">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/76/767447e1-41e3-4566-b17f-8eaeb8e87ad5.jpg">
+                            <img class="photogallery" 
+                            src="https://images.cybersport.ru/images/material-card/plain/76/767447e1-41e3-4566-b17f-8eaeb8e87ad5.jpg">
+            </main>
+        <footer>
+            <h1 id="Контакты" class="main">
+                        Контакты
+                    </h1>
+                    <div class="contacts">
+                    <p><a href="https://ru.pinterest.com/"><img src="contact/teleg.png"></a></p>
+                    <p><a href="https://ru.pinterest.com/"><img src="contact/vk.png"></a></p>
+                    <p><a href="https://ru.pinterest.com/"><img src="contact/whatsup.png"></a></p>
+                    </div>
+        </footer>
+    </body>
+</html>
