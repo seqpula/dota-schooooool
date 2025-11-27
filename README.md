@@ -1,0 +1,1 @@
+dotka kak dotka
