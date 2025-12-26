@@ -1,1 +1,2 @@
-dotka kak dotka
+ШКОЛА ДОТКИ
+https://seqpula.github.io/dota-schooooool/
